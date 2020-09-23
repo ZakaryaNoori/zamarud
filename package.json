@@ -1,0 +1,24 @@
+{
+  "name": "zamarud",
+  "version": "1.0.0",
+  "description": "lapis website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node-sass --watch assets/css/main.scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZakaryaNoori/zamarud.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZakaryaNoori/zamarud/issues"
+  },
+  "homepage": "https://github.com/ZakaryaNoori/zamarud#readme",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "sass": "^1.26.11"
+  }
+}
