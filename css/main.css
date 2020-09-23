@@ -1,8 +1,20 @@
+html {
+  font-size: 62.5%; }
+
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: poppins, sans-serif; }
+  font-family: poppins, sans-serif;
+  font-size: 1.6rem; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+a {
+  text-decoration: none;
+  color: white; }
 
 .nav-area {
   position: fixed;
@@ -18,7 +30,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 5%; }
+  margin: 0 5%;
+  padding: 10px 0; }
 
 nav ul {
   display: flex;
@@ -30,7 +43,30 @@ nav ul li:not(:last-child) {
 
 .banner-area {
   height: 100vh;
-  background: linear-gradient(to top right, #f8c600, #f8c); }
+  background-image: url("https://wallpapercave.com/wp/wp3904400.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column; }
+  .banner-area .banner-text {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    text-shadow: 0 0 10px black;
+    animation-name: animate;
+    animation-duration: 1s; }
+    .banner-area .banner-text-sm {
+      margin-top: 3rem;
+      margin-bottom: 10rem;
+      font-size: 2rem;
+      color: white;
+      text-shadow: 0 0 10px black;
+      animation-name: animate-down;
+      animation-duration: 1s; }
 
 .main-text {
   height: 200vh;
@@ -45,3 +81,19 @@ nav ul li:not(:last-child) {
 .nav-area.sticky {
   top: 0;
   z-index: 99; }
+
+@keyframes animate {
+  from {
+    opacity: 0;
+    transform: translateY(-2rem); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes animate-down {
+  from {
+    opacity: 0;
+    transform: translateY(2rem); }
+  to {
+    opacity: 1;
+    transform: translateY(0); } }
