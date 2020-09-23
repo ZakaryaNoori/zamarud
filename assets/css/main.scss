@@ -94,6 +94,40 @@ nav ul li:not(:last-child) {
     z-index: 99;
 }
 
+.video-part {
+    background-image: url("https://images.unsplash.com/photo-1588392382834-a891154bca4d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=755&q=80");
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    .video-text {
+        font-size: 3rem;
+        &-sm {
+            margin-top: 1rem;
+            margin-bottom: 1.4rem;
+        }
+    }
+    .watch-video {
+        padding: 1rem 3rem;
+        background-color: transparent;
+        border-radius: 3px;
+        border: 1px solid white;
+        color: white;
+        cursor: pointer;
+        transition: all .2s ease;
+        &:hover {
+            background-color: white;
+            color: black;
+        }
+    }
+}
+
 @keyframes animate {
     from {
         opacity: 0;
