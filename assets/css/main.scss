@@ -39,15 +39,20 @@ a {
     margin: 0 5%;
     padding: 10px 0;
 }
-
-nav ul {
-    display: flex;
-    align-items: center;
-    list-style: none;
-}
-
-nav ul li:not(:last-child) {
-    margin-right: 30px;
+nav {
+    ul {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        li {
+            a {
+                font-size: 1.4rem;
+            }
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
 }
 
 .banner-area {
@@ -172,13 +177,5 @@ nav ul li:not(:last-child) {
     }
 }
 
-.aos-init {
-    opacity: 0;
-    transition: all .2s ease;
-    transform: scale(2)
-}
-
-.aos-animate {
-    opacity: 1;
-    transform: scale(1)
+.third-part {
 }

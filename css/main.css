@@ -41,9 +41,10 @@ nav ul {
   display: flex;
   align-items: center;
   list-style: none; }
-
-nav ul li:not(:last-child) {
-  margin-right: 30px; }
+  nav ul li a {
+    font-size: 1.4rem; }
+  nav ul li:not(:last-child) {
+    margin-right: 30px; }
 
 .banner-area {
   height: 100vh;
@@ -144,12 +145,3 @@ nav ul li:not(:last-child) {
     transform: translateY(1rem); }
   to {
     transform: translateY(0); } }
-
-.aos-init {
-  opacity: 0;
-  transition: all .2s ease;
-  transform: scale(2); }
-
-.aos-animate {
-  opacity: 1;
-  transform: scale(1); }
