@@ -15,7 +15,10 @@ body {
 
 a {
   text-decoration: none;
-  color: white; }
+  color: #1b1818; }
+
+.logo {
+  font-size: 2.4rem; }
 
 .nav-area {
   position: fixed;
@@ -24,8 +27,8 @@ a {
   width: 100%;
   transition: top .6s;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.6);
-  color: white; }
+  background-color: rgba(255, 255, 255, 0.7);
+  color: #292626; }
 
 .menu-wrapper {
   display: flex;
