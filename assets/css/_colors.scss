@@ -1,0 +1,21 @@
+$main-color: (
+    original: #3423E6,
+    100: #E6E6FF,
+    200: #C4C6FE,
+    300: #A0A4FC,
+    400: #8888FC,
+    500: #7068F9,
+    600: #5D54F9,
+    700: #4D3DF7,
+    800: #1D18BD,
+    900: #0A0E8A
+);
+
+@each $key, $value in $main-color {
+    .text-main-#{$key} {
+      color: $value;
+    }
+    .bg-main-#{$key} {
+        background-color: $value;
+    }
+}
