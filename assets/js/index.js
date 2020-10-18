@@ -1,10 +1,8 @@
 $(function () {
   let scroll = $(document).scrollTop();
   let navHeight = $(".nav-area").outerHeight();
-
   $(window).scroll(function () {
     let scrolled = $(document).scrollTop();
-
     if (scrolled > navHeight) {
       $(".nav-area").addClass("animate");
     } else {
@@ -21,39 +19,57 @@ $(function () {
   });
 });
 
+$(function () {
+  // Nice Parallax effect
+  var interleaveOffset = 0.5;
 
-$(function () { // wait for document ready
-  // init controller
-  var controller = new ScrollMagic.Controller();
+  var swiperOptions = {
+    loop: true,
+    speed: 1200,
+    // autoplay: {
+    //   delay: 10000,
+    // },
+    grabCursor: false,
+    watchSlidesProgress: true,
+    mousewheelControl: true,
+    keyboardControl: true,
+    navigation: {
+      nextEl: ".next",
+      prevEl: ".prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    on: {
+      progress: function () {
+        var swiper = this;
+        for (var i = 0; i < swiper.slides.length; i++) {
+          var slideProgress = swiper.slides[i].progress;
+          var innerOffset = swiper.width * interleaveOffset;
+          var innerTranslate = slideProgress * innerOffset;
+          swiper.slides[i].querySelector(".slide-inner").style.transform =
+            "translate3d(" + innerTranslate + "px, 0, 0)";
+        }
+      },
+      touchStart: function () {
+        var swiper = this;
+        for (var i = 0; i < swiper.slides.length; i++) {
+          swiper.slides[i].style.transition = "";
+        }
+      },
+      setTransition: function (speed) {
+        var swiper = this;
+        for (var i = 0; i < swiper.slides.length; i++) {
+          swiper.slides[i].style.transition = speed + "ms";
+          swiper.slides[i].querySelector(".slide-inner").style.transition =
+            speed + "ms";
+        }
+      },
+    },
+  };
 
-  // show pin state
-  function updateBox (e) {
-    if (e.type == "enter") {
-      $("#pin p").text("Pinned.");
-    } else {
-      $("#pin p").text("Unpinned.");
-    }
-  }
+  var swiper = new Swiper("#nice-parallax", swiperOptions);
 
-  // build scenes
-  new ScrollMagic.Scene({triggerElement: "#trigger", duration: 150})
-    .setPin("#pin")
-    .setClassToggle("#pin", "green")
-    .on("enter leave", updateBox)
-    .addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-
-  new ScrollMagic.Scene({triggerElement: "#trigger", duration: 150, offset: 300})
-    .setPin("#pin")
-    .setClassToggle("#pin", "green")
-    .on("enter leave", updateBox)
-    .addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
-
-  new ScrollMagic.Scene({triggerElement: "#trigger", duration: 150, offset: 600})
-    .setPin("#pin")
-    .setClassToggle("#pin", "green")
-    .on("enter leave", updateBox)
-    .addIndicators() // add indicators (requires plugin)
-    .addTo(controller);
+  $('.slider-number').text('0' + swiper.activeIndex)
 });
