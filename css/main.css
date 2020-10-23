@@ -175,6 +175,10 @@ h1, h2, h3, h4, h5, h6, p, small {
 .h-100 {
   height: 100%; }
 
+@media only screen and (max-width: 768px) {
+  .hidden-sm {
+    display: none; } }
+
 .text-sm {
   font-size: 14px; }
 
@@ -735,86 +739,7 @@ h2 {
   text-align: center;
   margin: 30px 0px; }
 
-/*   Basic Slider demo   */
-.nice-parallax {
-  height: 100vh;
-  width: 100%; }
-
-.nice-parallax .swiper-slide {
-  overflow: hidden; }
-
-.nice-parallax .slide-inner {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  left: 0;
-  top: 0;
-  background-size: cover;
-  background-position: center; }
-
-.slide-inner h1 {
-  color: white;
-  font-size: 8rem;
-  opacity: 0;
-  transform: translateY(-100px);
-  transition: all .2s ease;
-  transition-delay: 1.2s;
-  text-align: center; }
-
-.swiper-slide.swiper-slide-active .slide-inner h1 {
-  opacity: 1;
-  transform: translateY(0); }
-
-.content {
-  position: absolute;
-  width: 100%;
-  z-index: 22;
-  top: 35vh;
-  left: 0;
-  color: white; }
-  .content .slide-number {
-    margin-right: 4.5rem; }
-  .content .heading {
-    margin: 0;
-    margin-left: 5rem;
-    font-size: 48px;
-    position: relative; }
-    .content .heading::after {
-      content: "";
-      background-color: #3423E6;
-      height: 14px;
-      width: 115px;
-      position: absolute;
-      right: 2px;
-      bottom: 10px;
-      z-index: -1; }
-  .content .small {
-    margin-left: 5rem;
-    margin-top: 30px;
-    font-weight: 300; }
-  .content .paginate {
-    display: flex;
-    align-items: center;
-    margin-top: 23vh; }
-    .content .paginate .prev, .content .paginate .next {
-      cursor: pointer; }
-    .content .paginate :not(:last-child) {
-      margin-right: 100px;
-      position: relative;
-      display: flex;
-      align-items: center; }
-      .content .paginate :not(:last-child)::after {
-        content: "";
-        width: 4rem;
-        height: 1px;
-        background-color: #707070;
-        margin-left: 55px;
-        position: absolute; }
-
 .blue-line {
   height: 5px;
   background-color: #3423E6;
   width: 100px; }
-
-.about-content {
-  padding-left: 4rem; }
