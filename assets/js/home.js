@@ -1,3 +1,5 @@
+const { default: Swiper } = require("swiper");
+
 $(function () {
   // Nice Parallax effect
   var interleaveOffset = 0.5;
