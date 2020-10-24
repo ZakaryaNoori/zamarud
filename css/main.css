@@ -177,7 +177,7 @@ h1, h2, h3, h4, h5, h6, p, small {
 
 @media only screen and (max-width: 768px) {
   .hidden-sm {
-    display: none; } }
+    display: none !important; } }
 
 .text-sm {
   font-size: 14px; }
@@ -694,21 +694,22 @@ body {
   margin: 0 5%;
   padding: 10px 0; }
 
-nav ul {
+nav ul.lg-nav {
   display: flex;
   align-items: center;
   list-style: none;
   margin: 0;
   padding: 0; }
-  nav ul li a {
+  nav ul.lg-nav li a {
     font-size: 16px;
     color: white; }
-  nav ul li:not(:last-child) {
+  nav ul.lg-nav li:not(:last-child) {
     margin-right: 30px; }
 
 .logo {
+  width: 140px;
   margin: 0;
-  padding: 15px; }
+  padding: 10px 0; }
 
 a {
   text-decoration: none;
@@ -745,4 +746,33 @@ h2 {
   width: 100px; }
 
 .footer {
-  background-color: #212121; }
+  background-color: #212121;
+  color: white; }
+
+.text-center {
+  text-align: center; }
+
+.burger {
+  display: none;
+  visibility: hidden; }
+
+@media only screen and (max-width: 768px) {
+  .burger {
+    background-color: transparent;
+    display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 6px;
+    border-radius: 2px;
+    border: 1px solid #616161; }
+    .burger li {
+      border-radius: 2px;
+      display: block;
+      background-color: white;
+      height: 2px;
+      width: 17px; }
+      .burger li:not(:last-child) {
+        margin-bottom: 3px; } }

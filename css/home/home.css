@@ -189,5 +189,28 @@
         margin-left: 55px;
         position: absolute; }
 
-.about-content {
-  padding-left: 4rem; }
+.see-more {
+  color: white;
+  animation-name: seeMoreAnimation;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; }
+
+@media only screen and (max-width: 768px) {
+  .content .heading {
+    margin-left: 0;
+    font-size: 32px;
+    text-align: center; }
+    .content .heading::after {
+      opacity: 0; }
+  .small {
+    text-align: center;
+    margin-left: 0 !important; }
+  .logo {
+    width: 100px !important; } }
+
+@keyframes seeMoreAnimation {
+  0%, 100% {
+    transform: translateY(13px); }
+  50% {
+    transform: translateY(0); } }

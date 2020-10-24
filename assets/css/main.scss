@@ -29,7 +29,7 @@ body {
 }
 
 nav {
-  ul {
+  ul.lg-nav {
       display: flex;
       align-items: center;
       list-style: none;
@@ -47,8 +47,9 @@ nav {
   }
 }
 .logo {
+  width: 140px;
   margin: 0;
-  padding: 15px;
+  padding: 10px 0;
 }
 
 a {
@@ -93,4 +94,39 @@ h2 {
 
 .footer {
   background-color: #212121;
+  color: white;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.burger {
+  display: none;
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 768px) {
+  .burger {
+    background-color: transparent;
+    display: flex;
+    visibility: visible;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 6px;
+    border-radius: 2px;
+    border: 1px solid map-get($map: $color-gray, $key: 700);
+    li {
+      border-radius: 2px;
+      display: block;
+      background-color: white;
+      height: 2px;
+      width: 17px;
+      &:not(:last-child) {
+        margin-bottom: 3px;
+      }
+    }
+  }
 }

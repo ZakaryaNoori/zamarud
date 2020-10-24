@@ -1,4 +1,4 @@
-const { default: Swiper } = require("swiper");
+// const { default: Swiper } = require("swiper");
 
 $(function () {
   // Nice Parallax effect
@@ -7,9 +7,9 @@ $(function () {
   var swiperOptions = {
     loop: true,
     speed: 1200,
-    // autoplay: {
-    //   delay: 10000,
-    // },
+    autoplay: {
+      delay: 3000,
+    },
     grabCursor: false,
     watchSlidesProgress: true,
     mousewheelControl: true,
