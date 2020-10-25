@@ -146,8 +146,8 @@
   position: absolute;
   width: 100%;
   z-index: 22;
-  top: 35vh;
   left: 0;
+  top: 0;
   color: white; }
   .content .slide-number {
     margin-right: 4.5rem; }
@@ -171,8 +171,7 @@
     font-weight: 300; }
   .content .paginate {
     display: flex;
-    align-items: center;
-    margin-top: 23vh; }
+    align-items: center; }
     .content .paginate .prev,
     .content .paginate .next {
       cursor: pointer; }

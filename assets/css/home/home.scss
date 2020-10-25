@@ -45,8 +45,8 @@
   position: absolute;
   width: 100%;
   z-index: 22;
-  top: 35vh;
   left: 0;
+  top: 0;
   color: white;
   .slide-number {
     margin-right: 4.5rem;
@@ -75,7 +75,6 @@
   .paginate {
     display: flex;
     align-items: center;
-    margin-top: 23vh;
     .prev,
     .next {
       cursor: pointer;

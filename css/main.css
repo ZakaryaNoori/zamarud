@@ -157,12 +157,16 @@ h1, h2, h3, h4, h5, h6, p, small {
   padding: 16px 32px;
   cursor: pointer;
   transition: all .2s ease;
-  outline: none; }
+  outline: none;
+  border-radius: 5rem; }
+  .btn.btn-primary {
+    background-color: #3423E6;
+    color: white;
+    border: none; }
   .btn.btn-secondary {
     background-color: transparent;
     border: 1px solid #3423E6;
-    color: #3423E6;
-    border-radius: 5rem; }
+    color: #3423E6; }
     .btn.btn-secondary:hover {
       color: white;
       background-color: #3423E6; }
@@ -205,6 +209,12 @@ h1, h2, h3, h4, h5, h6, p, small {
 
 .text-medium {
   font-weight: 600; }
+
+.text-uppercase {
+  text-transform: uppercase; }
+
+.text-white {
+  color: white; }
 
 /**
  * Swiper 6.3.3
@@ -720,7 +730,7 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  transition: top .6s, background-color .4s;
+  transition: top 0.6s, background-color 0.4s;
   box-sizing: border-box;
   background-color: transparent;
   color: white;
@@ -734,14 +744,14 @@ a {
 
 .nav-area.animate.sticky {
   backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(0, 0, 0, 0.5); }
+  background-color: #10141D; }
 
 h2 {
   text-align: center;
   margin: 30px 0px; }
 
 .blue-line {
-  height: 5px;
+  height: 6px;
   background-color: #3423E6;
   width: 100px; }
 
@@ -755,6 +765,9 @@ h2 {
 .burger {
   display: none;
   visibility: hidden; }
+
+.border-bottom {
+  border-bottom: 1px solid #424242; }
 
 @media only screen and (max-width: 768px) {
   .burger {
