@@ -138,13 +138,10 @@
   transition-delay: 1.2s;
   text-align: center; }
 
-.swiper-slide.swiper-slide-active .slide-inner h1 {
-  opacity: 1;
-  transform: translateY(0); }
-
 .content {
   position: absolute;
   width: 100%;
+  height: 100%;
   z-index: 22;
   left: 0;
   top: 0;
@@ -190,6 +187,7 @@
 
 .see-more {
   color: white;
+  margin-bottom: 40px;
   animation-name: seeMoreAnimation;
   animation-duration: 1s;
   animation-timing-function: ease-in-out;

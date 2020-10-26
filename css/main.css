@@ -184,13 +184,13 @@ h1, h2, h3, h4, h5, h6, p, small {
     display: none !important; } }
 
 .text-sm {
-  font-size: 14px; }
+  font-size: 12px; }
 
 .text-regular {
-  font-size: 16px; }
+  font-size: 14px; }
 
 .text-md {
-  font-size: 18px; }
+  font-size: 16px; }
 
 .text-lg {
   font-size: 20px; }
@@ -691,34 +691,10 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: inter, sans-serif;
-  font-size: 16px; }
+  font-size: 14px; }
 
 .my-container {
   margin: 0 5%;
-  padding: 10px 0; }
-
-.menu-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 0 5%;
-  padding: 10px 0; }
-
-nav ul.lg-nav {
-  display: flex;
-  align-items: center;
-  list-style: none;
-  margin: 0;
-  padding: 0; }
-  nav ul.lg-nav li a {
-    font-size: 16px;
-    color: white; }
-  nav ul.lg-nav li:not(:last-child) {
-    margin-right: 30px; }
-
-.logo {
-  width: 140px;
-  margin: 0;
   padding: 10px 0; }
 
 a {
@@ -730,11 +706,33 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  transition: top 0.6s, background-color 0.4s;
+  transition: top 0.6s;
   box-sizing: border-box;
   background-color: transparent;
   color: white;
   z-index: 23; }
+  .nav-area .logo {
+    width: 140px;
+    margin: 0;
+    padding: 10px 0; }
+  .nav-area .menu-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 10px 0;
+    z-index: 99; }
+    .nav-area .menu-wrapper nav ul.lg-nav {
+      display: flex;
+      align-items: center;
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+      .nav-area .menu-wrapper nav ul.lg-nav li a {
+        font-size: 14px;
+        color: white; }
+      .nav-area .menu-wrapper nav ul.lg-nav li:not(:last-child) {
+        margin-right: 30px; }
 
 .nav-area.animate {
   top: -91px; }
@@ -788,4 +786,25 @@ h2 {
       height: 2px;
       width: 17px; }
       .burger li:not(:last-child) {
-        margin-bottom: 3px; } }
+        margin-bottom: 3px; }
+  .lg-nav {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    right: 0;
+    top: 64px;
+    background-color: #10141D;
+    align-items: flex-start !important;
+    transform: translateY(-120%);
+    z-index: -1;
+    transition: all .2s ease; }
+    .lg-nav.active {
+      transform: translate(0); }
+    .lg-nav li {
+      margin: 0 !important;
+      width: 100%; }
+      .lg-nav li a {
+        display: block;
+        width: 100%;
+        padding: 20px;
+        font-size: 14px !important; } }

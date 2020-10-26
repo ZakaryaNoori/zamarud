@@ -1,15 +1,16 @@
 $main-font: inter, sans-serif;
+$main-font-size: 14px;
 
 .text-sm {
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .text-regular {
-    font-size: 16px;
+    font-size: $main-font-size;
 }
 
 .text-md {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .text-lg {

@@ -22,7 +22,7 @@
         <div class="menu-wrapper">
             <div class="logo">
                 <a href="index.html">
-                    <img src="./assets/images/logo.png" alt="" class="w-100">
+                    <img src="./assets/images/logo.svg" alt="" class="w-100">
                 </a>
             </div>
             <nav>
@@ -31,11 +31,11 @@
                     <li></li>
                     <li></li>
                 </button>
-                <ul class="hidden-sm lg-nav">
-                    <li><a href="javascript:void()">Home</a></li>
-                    <li><a href="javascript:void()">Lapis Facts</a></li>
-                    <li><a href="javascript:void()">Why Us?</a></li>
-                    <li><a href="javascript:void()">Contact</a></li>
+                <ul class="lg-nav">
+                    <li><a href="./pages/lapis-facts.html">Lapis Facts</a></li>
+                    <li><a href="./pages/our-products.html">Our products</a></li>
+                    <li><a href="./pages/why-us.html">Why Us?</a></li>
+                    <li><a href="./pages/contact.html">Contact</a></li>
                 </ul>
             </nav>
         </div>
@@ -46,17 +46,19 @@
         <div class="swiper-wrapper">
             <!-- Slides -->
             <div class="swiper-slide">
-                <div class="slide-inner" style="background-image:url(./assets/images/hero-min.jpg); background-size: cover;">
+                <div class="slide-inner" style="background-image:url(./assets/images/hero-min.jpg);">
                     <!-- <h1>this is active</h1> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="slide-inner" style="background-image:url(./assets/images/hero-min.jpg); background-size: cover;">
+                <div
+                    class="slide-inner"
+                    style="background-image:url(./assets/images/lapis-2.jpg); background-position: 400% top;">
                     <!-- <h1>this is active</h1> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="slide-inner" style="background-image:url(./assets/images/hero-min.jpg); background-size: cover;">
+                <div class="slide-inner" style="background-image:url(./assets/images/lapis-3.jpg); background-position: 400% right;">
                     <!-- <h1>this is active</h1> -->
                 </div>
             </div>
@@ -70,7 +72,7 @@
                         The Word’s Most <br class="hidden-sm">
                         Magnificent Lapis
                     </h1>
-                    <div class="small">Responsibly sourced from the Badakhshan Mountains</div>
+                    <div class="small">Responsibly sourced from the Badakhshan Province</div>
                 </div>
             </div>
             <div class="paginate my-container hidden-sm">
@@ -88,22 +90,21 @@
         </div>
     </div>
 
-    <div class="bg-gray-300" id="info">
+    <div class="bg-gray-200" id="info">
         <div class="container">
             <div class="sp sp100"></div>
-            <div class="blue-line"></div>
             <div class="sp sp10"></div>
-            <h3 class="text-lg text-gray-800">Badakhshan is one of the most destitute areas in the world <br class="hidden-sm">
+            <h3 class="text-lg text-gray-800 text-center">Badakhshan is one of the most destitute areas in the world <br class="hidden-sm">
                 Lapis lazuli has been mined in the Sar-e-Sang mines</h3>
                 <div class="sp sp10"></div>
-            <p class="text-gray-700">It’s only just come into existence, and it already doesn’t like us. “ Gem Harvest” We’re not leaving our home</p>
-            <div class="sp sp30"></div>
-            <button class="btn btn-primary">LEARN MORE</button>
+            <p class="text-gray-700 text-center">It’s only just come into existence, and it already doesn’t like us. “ Gem Harvest” We’re not leaving our home</p>
+            <!-- <div class="sp sp30"></div> -->
+            <!-- <button class="btn btn-primary">LEARN MORE</button> -->
         </div>
         <div class="sp sp100"></div>
     </div>
 
-    <div class="about bg-white">
+    <div class="about bg-gray-100">
         <div class="container">
             <div class="sp sp100"></div>
             <div class="row">
@@ -116,10 +117,11 @@
                         <div class="sp sp10"></div>
                         <h4 class="text-xlg text-gray-800">Facts About Lapis</h4>
                         <div class="sp sp10"></div>
-                        <p class="text-gray-700">Emeralds are among the rarest precious stones. that the earth has
-                            to offer. And they’re rare for a reason.</p>
-                            <div class="sp sp30"></div>
-                            <button class="btn btn-secondary" href="about.html">LEARN MORE</button>
+                        <p class="text-gray-700">Emeralds are among the rarest precious stones, that the earth has to offer. <br> And they’re rare for a reason.</p>
+                        <div class="sp sp30"></div>
+                        <a href="./pages/lapis-facts.html">
+                            <button class="btn btn-secondary">LEARN MORE</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -127,18 +129,35 @@
         </div>
     </div>
 
-    <!-- <div class="video">
+    <div class="video">
         <video autoplay loop muted width="100%" src="./assets/images/vid.mp4">
             Sorry your browser doesn't support videos.
         </video>
-    </div> -->
+    </div>
+
+    <div class="why-us bg-gray-100">
+        <div class="sp sp100"></div>
+        <div class="container">
+            <h4 class="text-gray-800 text-xlg">Why Badakhshan Lapis</h4>
+            <div class="sp sp10"></div>
+            <div class="blue-line"></div>
+            <div class="sp sp20"></div>
+            <ul class="list">
+                <li>The Badakhshan province offers the bluest Lapis Lazuli on earth.</li>
+                <li>We have unique access to the best of them.</li>
+                <li>We cut for beauty, not weight.</li>
+                <li>We’re putting the needs of people before profits</li>
+            </ul>
+        </div>
+        <div class="sp sp100"></div>
+    </div>
 
     <div class="footer">
         <div class="sp sp100"></div>
         <div class="container">
             <div class="row">
                 <div class="col-lg-3">
-                    <img src="./assets/images/logo.png" alt="" width="120" class="pb-4 pb-sm-0">
+                    <img src="./assets/images/logo.svg" alt="" width="120" class="pb-4 pb-sm-0">
                 </div>
                 <div class="col-lg-3 pb-5 pb-sm-0">
                     <div class="text-uppercase text-light text-sm">company</div>

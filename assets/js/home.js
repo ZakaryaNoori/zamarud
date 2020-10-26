@@ -54,3 +54,8 @@ $(function () {
 
   $(".slider-number").text("0" + swiper.activeIndex);
 });
+
+
+$(".burger").click(function() {
+  $(".lg-nav").toggleClass("active");
+});
