@@ -8,11 +8,13 @@ $(function () {
     } else {
       $(".nav-area").removeClass("animate");
     }
-    // if (scrolled > scroll) {
-    //   $(".nav-area").removeClass("sticky");
-    // } else {
-    //   $(".nav-area").addClass("sticky");
-    // }
+    if (scrolled > scroll) {
+      if (!$(".lg-nav").hasClass("active")) {
+        $(".nav-area").removeClass("sticky");
+      }
+    } else {
+      $(".nav-area").addClass("sticky");
+    }
     scroll = $(document).scrollTop();
   });
 });
@@ -21,4 +23,7 @@ $(function () {
 
 $(".burger").click(function() {
   $(".lg-nav").toggleClass("active");
+  if ($(".lg-nav").hasClass("active")) {
+    $(".nav-area").addClass("animate");
+  }
 });

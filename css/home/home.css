@@ -185,6 +185,13 @@
         margin-left: 55px;
         position: absolute; }
 
+.why-number {
+  color: #A0A4FC;
+  font-size: 1.4rem;
+  border-bottom: 4px solid #3423E6;
+  font-weight: 600;
+  margin-right: 1rem; }
+
 .see-more {
   color: white;
   margin-bottom: 40px;
@@ -192,6 +199,12 @@
   animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite; }
+
+[data-aos="line-animation"] {
+  width: 1rem;
+  transition-property: width; }
+  [data-aos="line-animation"].aos-animate {
+    width: 5rem; }
 
 @media only screen and (max-width: 768px) {
   .nice-parallax {

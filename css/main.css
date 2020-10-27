@@ -199,7 +199,7 @@ h1, h2, h3, h4, h5, h6, p, small {
   font-size: 14px; }
 
 .text-md {
-  font-size: 16px; }
+  font-size: 0.975rem; }
 
 .text-lg {
   font-size: 20px; }
@@ -718,7 +718,7 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  transition: top 0.6s;
+  transition: top 0.3s;
   box-sizing: border-box;
   background-color: transparent;
   color: white;
@@ -761,13 +761,18 @@ h2 {
   margin: 30px 0px; }
 
 .blue-line {
-  height: 6px;
+  height: 0.475rem;
   background-color: #3423E6;
-  width: 100px; }
+  width: 5rem; }
+
+.text-right {
+  text-align: right; }
 
 .footer {
   background-color: #212121;
   color: white; }
+  .footer a {
+    color: #bdbdbd; }
 
 .text-center {
   text-align: center; }
@@ -811,7 +816,7 @@ h2 {
     z-index: -1;
     transition: all 0.2s ease; }
     .lg-nav.active {
-      transform: translate(0); }
+      transform: translateY(-1px); }
     .lg-nav li {
       margin: 0 !important;
       width: 100%; }
