@@ -700,7 +700,8 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: inter, sans-serif;
-  font-size: 14px; }
+  font-size: 14px;
+  line-height: 1.5; }
 
 .my-container {
   margin: 0 5%;
