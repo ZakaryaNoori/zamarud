@@ -10,6 +10,7 @@
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/css/swiper.min.css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap-grid.min.css" integrity="sha512-QTQigm89ZvHzwoJ/NgJPghQPegLIwnXuOXWEdAjjOvpE9uaBGeI05+auj0RjYVr86gtMaBJRKi8hWZVsrVe/Ug==" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- internal imports -->
     <link rel="stylesheet" href="./css/main.css">
@@ -51,14 +52,12 @@
                 </div>
             </div>
             <div class="swiper-slide">
-                <div
-                    class="slide-inner"
-                    style="background-image:url(./assets/images/lapis-2.jpg);">
+                <div class="slide-inner" style="background-image:url(./assets/images/hero.jpg);">
                     <!-- <h1>this is active</h1> -->
                 </div>
             </div>
             <div class="swiper-slide">
-                <div class="slide-inner" style="background-image:url(./assets/images/lapis-5.jpg);">
+                <div class="slide-inner" style="background-image:url(./assets/images/hero.jpg);">
                     <!-- <h1>this is active</h1> -->
                 </div>
             </div>
@@ -91,7 +90,7 @@
     </div>
 
     <div class="bg-gray-200" id="info">
-        <div class="container">
+        <div class="container" data-aos="fade-down">
             <div class="sp sp100"></div>
             <div class="sp sp10"></div>
             <h3 class="text-lg text-gray-800 text-center">Badakhshan is one of the most destitute areas in the world <br class="hidden-sm">
@@ -107,17 +106,17 @@
     <div class="about bg-gray-100">
         <div class="container">
             <div class="sp sp100"></div>
-            <div class="row">
+            <div class="row overflow-x-hidden">
                 <div class="col-lg-7">
-                    <img src="./assets/images/about-lapis.jpg" alt="" class="w-100">
+                    <img src="./assets/images/about-lapis.jpg" alt="" class="w-100" data-aos="fade-right">
                 </div>
                 <div class="col-lg-5">
-                    <div class="pl-0 pl-md-5 pt-5 pt-md-0 h-100 d-flex justify-content-center align-items-start flex-column">
+                    <div data-aos="fade-left" class="pl-0 pl-md-5 pt-5 pt-md-0 h-100 d-flex justify-content-center align-items-start flex-column">
                         <div class="blue-line"></div>
                         <div class="sp sp10"></div>
                         <h4 class="text-xlg text-gray-800">Facts About Lapis</h4>
                         <div class="sp sp10"></div>
-                        <p class="text-gray-700">Emeralds are among the rarest precious stones, that the earth has to offer. <br> And they’re rare for a reason.</p>
+                        <p class="text-gray-700">Emeralds are among the rarest precious stones, that the earth has to offer. And they’re rare for a reason.</p>
                         <div class="sp sp30"></div>
                         <a href="./pages/lapis-facts.html">
                             <button class="btn btn-secondary">LEARN MORE</button>
@@ -137,16 +136,16 @@
 
     <div class="why-us bg-gray-100">
         <div class="sp sp100"></div>
-        <div class="container">
-            <h4 class="text-gray-800 text-xlg">Why Badakhshan Lapis</h4>
+        <div class="container overflow-x-hidden">
+            <h4 class="text-gray-800 text-xlg" data-aos="fade-down">Why Badakhshan Lapis</h4>
             <div class="sp sp10"></div>
-            <div class="blue-line"></div>
+            <div class="blue-line" data-aos="fade-right"></div>
             <div class="sp sp20"></div>
             <ul class="list">
-                <li>The Badakhshan province offers the bluest Lapis Lazuli on earth.</li>
-                <li>We have unique access to the best of them.</li>
-                <li>We cut for beauty, not weight.</li>
-                <li>We’re putting the needs of people before profits</li>
+                <li data-aos="fade-right">The Badakhshan province offers the bluest Lapis Lazuli on earth.</li>
+                <li data-aos="fade-left" data-aos-easing="linear" data-aos-offset="400">We have unique access to the best of them.</li>
+                <li data-aos="fade-right" data-aos-easing="linear" data-aos-offset="600">We cut for beauty, not weight.</li>
+                <li data-aos="fade-left" data-aos-easing="linear" data-aos-offset="600">We’re putting the needs of people before profits</li>
             </ul>
         </div>
         <div class="sp sp100"></div>
@@ -210,8 +209,13 @@
     <!-- partial -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.7/js/swiper.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="./assets/js/home.js"></script>
     <script src="./assets/js/index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 

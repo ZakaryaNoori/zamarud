@@ -20,6 +20,10 @@ body {
   padding: 10px 0;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
 a {
   text-decoration: none;
   color: rgb(27, 24, 24);
@@ -77,7 +81,7 @@ a {
 
 .nav-area.animate.sticky {
   backdrop-filter: saturate(180%) blur(20px);
-  background-color: #10141D;
+  background-color: #10141d;
 }
 
 h2 {
@@ -138,11 +142,11 @@ h2 {
     width: 100%;
     right: 0;
     top: 64px;
-    background-color: #10141D;
+    background-color: #10141d;
     align-items: flex-start !important;
-    transform: translateY(-120%);
+    transform: translateY(-127%);
     z-index: -1;
-    transition: all .2s ease;
+    transition: all 0.2s ease;
     &.active {
       transform: translate(0);
     }

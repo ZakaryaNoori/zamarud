@@ -154,11 +154,11 @@ h1, h2, h3, h4, h5, h6, p, small {
   background-color: white; }
 
 .btn {
-  padding: 16px 32px;
+  padding: .85rem 1.25rem;
   cursor: pointer;
   transition: all .2s ease;
   outline: none;
-  border-radius: 5rem; }
+  border-radius: 3px; }
   .btn.btn-primary {
     background-color: #3423E6;
     color: white;
@@ -178,6 +178,15 @@ h1, h2, h3, h4, h5, h6, p, small {
 
 .h-100 {
   height: 100%; }
+
+.list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+  .list li {
+    font-size: 1.1rem; }
+    .list li:not(:last-child) {
+      margin-bottom: 2rem; }
 
 @media only screen and (max-width: 768px) {
   .hidden-sm {
@@ -697,6 +706,9 @@ body {
   margin: 0 5%;
   padding: 10px 0; }
 
+.overflow-x-hidden {
+  overflow-x: hidden; }
+
 a {
   text-decoration: none;
   color: #1b1818; }
@@ -742,7 +754,7 @@ a {
 
 .nav-area.animate.sticky {
   backdrop-filter: saturate(180%) blur(20px);
-  background-color: #10141D; }
+  background-color: #10141d; }
 
 h2 {
   text-align: center;
@@ -793,11 +805,11 @@ h2 {
     width: 100%;
     right: 0;
     top: 64px;
-    background-color: #10141D;
+    background-color: #10141d;
     align-items: flex-start !important;
-    transform: translateY(-120%);
+    transform: translateY(-127%);
     z-index: -1;
-    transition: all .2s ease; }
+    transition: all 0.2s ease; }
     .lg-nav.active {
       transform: translate(0); }
     .lg-nav li {

@@ -16,3 +16,9 @@ $(function () {
     scroll = $(document).scrollTop();
   });
 });
+
+
+
+$(".burger").click(function() {
+  $(".lg-nav").toggleClass("active");
+});

@@ -194,6 +194,8 @@
   animation-iteration-count: infinite; }
 
 @media only screen and (max-width: 768px) {
+  .nice-parallax {
+    height: calc(100vh - 56px); }
   .content .heading {
     margin-left: 0;
     font-size: 32px;
