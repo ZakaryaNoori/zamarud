@@ -1,0 +1,25 @@
+.header {
+    height: 100vh;
+    background-image: url(../../assets/images/new/EMI_3802.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    &-text {
+        font-size: 3.4rem;
+        font-weight: 600;
+    }
+    &-paragraph {
+        font-size: 1.5rem;
+    }
+    div, p {
+        text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
+    }
+}
+
+.sub-header {
+    background-image: url(../../assets/images/11.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+}
