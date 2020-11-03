@@ -1,15 +1,16 @@
 .header {
     height: 100vh;
-    background-image: url(../../assets/images/new/EMI_3802.jpg);
+    background-image: url(../../assets/final/facts.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     &-text {
-        font-size: 3.4rem;
+        font-size: 40px;
         font-weight: 600;
+        position: relative;
     }
     &-paragraph {
-        font-size: 1.5rem;
+        font-size: 17px;
     }
     div, p {
         text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5);
@@ -17,7 +18,7 @@
 }
 
 .sub-header {
-    background-image: url(../../assets/images/11.jpg);
+    background-image: url(../../assets/final/facts2.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

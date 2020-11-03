@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node-sass --watch assets/css/main.scss -o css home",
     "home": "node-sass --watch assets/css/home/home.scss -o css/home",
-    "facts": "node-sass --watch assets/css/facts/facts.scss -o css/facts"
+    "facts": "node-sass --watch assets/css/facts/facts.scss -o css/facts",
+    "dev": "npm run watch & npm run home & npm run facts"
   },
   "repository": {
     "type": "git",
