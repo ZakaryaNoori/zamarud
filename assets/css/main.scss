@@ -2,8 +2,6 @@
 @import "global";
 @import "typography";
 
-@import url('https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap');
-
 html {
   scroll-behavior: smooth;
 }
@@ -15,10 +13,6 @@ body {
   font-family: inter, sans-serif;
   font-size: $main-font-size;
   line-height: 1.5;
-}
-
-.title {
-  font-family: old standard ,'Times New Roman', Times, serif;
 }
 
 .my-container {
@@ -174,4 +168,21 @@ h2 {
       }
     }
   }
+}
+
+[data-aos="line-animation"] {
+  width: 1rem;
+  transition-property: width;
+
+  &.aos-animate {
+    width: 5rem;
+  }
+
+  // @media screen and (min-width: 768px) {
+  //   transform: translateX(100px);
+
+  //   &.aos-animate {
+  //     transform: translateX(0);
+  //   }
+  // }
 }

@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Old+Standard+TT&display=swap");
 .text-main-original {
   color: #3423E6; }
 
@@ -237,9 +236,6 @@ body {
   font-size: 14px;
   line-height: 1.5; }
 
-.title {
-  font-family: old standard ,'Times New Roman', Times, serif; }
-
 .my-container {
   margin: 0 5%;
   padding: 10px 0; }
@@ -363,3 +359,9 @@ h2 {
         width: 100%;
         padding: 20px;
         font-size: 14px !important; } }
+
+[data-aos="line-animation"] {
+  width: 1rem;
+  transition-property: width; }
+  [data-aos="line-animation"].aos-animate {
+    width: 5rem; }

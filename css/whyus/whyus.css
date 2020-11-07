@@ -1,20 +1,19 @@
 .header {
-  height: 100vh;
+  height: calc(100vh - 56px);
   background-image: url(../../assets/final/back2.png);
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
   .header-text {
-    font-size: 36px;
+    font-size: 40px;
     position: relative; }
   .header-paragraph {
-    font-size: 14px;
+    font-size: 16px;
     margin-top: 20px;
     padding: 0 40px; }
   .header div, .header p {
     text-shadow: 2px 3px 8px rgba(0, 0, 0, 0.5); }
-
-.sub-header {
-  background-image: url(../../assets/final/facts-2.png);
-  background-size: cover;
-  background-position: center; }

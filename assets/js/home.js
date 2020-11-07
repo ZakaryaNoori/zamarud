@@ -1,5 +1,3 @@
-// const { default: Swiper } = require("swiper");
-
 $(function () {
   // Nice Parallax effect
   var interleaveOffset = 0.5;
@@ -8,11 +6,11 @@ $(function () {
     loop: true,
     speed: 1200,
     autoplay: {
-      delay: 3000,
+      delay: 1000,
     },
     grabCursor: false,
     watchSlidesProgress: true,
-    mousewheelControl: true,
+    mousewheelControl: false,
     keyboardControl: true,
     navigation: {
       nextEl: ".next",

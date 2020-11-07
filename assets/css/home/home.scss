@@ -115,30 +115,13 @@
   animation-iteration-count: infinite;
 }
 
-[data-aos="line-animation"] {
-  width: 1rem;
-  transition-property: width;
-
-  &.aos-animate {
-    width: 5rem;
-  }
-
-  // @media screen and (min-width: 768px) {
-  //   transform: translateX(100px);
-
-  //   &.aos-animate {
-  //     transform: translateX(0);
-  //   }
-  // }
-}
-
 @media only screen and (max-width: 768px) {
   .nice-parallax {
     height: calc(100vh - 56px);
   }
   .content .heading {
     margin-left: 0;
-    font-size: 32px;
+    font-size: 36px;
     text-align: center;
     &::after {
       opacity: 0;

@@ -8,7 +8,7 @@
     "watch": "node-sass --watch assets/css/main.scss -o css home",
     "home": "node-sass --watch assets/css/home/home.scss -o css/home",
     "facts": "node-sass --watch assets/css/facts/facts.scss -o css/facts",
-    "dev": "npm run watch & npm run home & npm run facts"
+    "whyus": "node-sass --watch assets/css/whyus/whyus.scss -o css/whyus"
   },
   "repository": {
     "type": "git",

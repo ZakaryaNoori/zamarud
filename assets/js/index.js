@@ -3,7 +3,7 @@ $(function () {
   let navHeight = $(".nav-area").outerHeight();
   $(window).scroll(function () {
     let scrolled = $(document).scrollTop();
-    if (scrolled > navHeight) {
+    if (scrolled > (navHeight + 100)) {
       $(".nav-area").addClass("animate sticky");
     } else {
       $(".nav-area").removeClass("animate");
@@ -24,6 +24,6 @@ $(function () {
 $(".burger").click(function() {
   $(".lg-nav").toggleClass("active");
   if ($(".lg-nav").hasClass("active")) {
-    $(".nav-area").addClass("animate");
+    $(".nav-area").addClass("animate sticky");
   }
 });
