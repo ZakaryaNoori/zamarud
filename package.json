@@ -4,11 +4,11 @@
   "description": "lapis website",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "node-sass --watch assets/css/main.scss -o css home",
     "home": "node-sass --watch assets/css/home/home.scss -o css/home",
     "facts": "node-sass --watch assets/css/facts/facts.scss -o css/facts",
-    "whyus": "node-sass --watch assets/css/whyus/whyus.scss -o css/whyus"
+    "whyus": "node-sass --watch assets/css/whyus/whyus.scss -o css/whyus",
+    "dev": "concurrently --kill-others \"npm:watch\" \"npm:home\" \"npm:facts\" \"npm:whyus\""
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ZakaryaNoori/zamarud#readme",
   "dependencies": {
+    "concurrently": "^5.3.0",
     "jquery": "^3.5.1",
     "node-sass": "^4.14.1",
     "sass": "^1.26.11",
