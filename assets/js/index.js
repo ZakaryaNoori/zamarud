@@ -8,13 +8,6 @@ $(function () {
     } else {
       $(".nav-area").removeClass("animate");
     }
-    if (scrolled > scroll) {
-      if (!$(".lg-nav").hasClass("active")) {
-        $(".nav-area").removeClass("sticky");
-      }
-    } else {
-      $(".nav-area").addClass("sticky");
-    }
     scroll = $(document).scrollTop();
   });
 });
