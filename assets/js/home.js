@@ -6,7 +6,7 @@ $(function () {
     loop: true,
     speed: 1200,
     autoplay: {
-      delay: 1000,
+      delay: 2000,
     },
     grabCursor: false,
     watchSlidesProgress: true,

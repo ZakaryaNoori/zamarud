@@ -49,9 +49,10 @@ a {
   left: 0;
   top: 0;
   width: 100%;
-  transition: top 0.3s;
+  transition: all 0.3s ease;
   box-sizing: border-box;
   background-color: transparent;
+  // background-color: #1F2933;
   color: rgb(255, 255, 255);
   z-index: 23;
   .logo {
@@ -93,6 +94,11 @@ a {
   }
 }
 
+.img-responsive {
+  width: 100%;
+  object-fit: cover;
+}
+
 .nav-area.animate {
   top: -91px;
 }
@@ -101,8 +107,7 @@ a {
 }
 
 .nav-area.animate.sticky {
-  backdrop-filter: saturate(180%) blur(20px);
-  background-color: #10141d;
+  background-color: #1f2933;
 }
 
 h2 {
@@ -121,7 +126,7 @@ h2 {
 }
 
 .footer {
-  background-color: #212121;
+  background-color: #1F2933;
   color: white;
   a {
     color: map-get($map: $color-gray, $key: 400);
@@ -170,7 +175,7 @@ h2 {
     width: 100%;
     right: 0;
     top: 64px;
-    background-color: #10141d;
+    background-color: #1F2933;
     align-items: flex-start !important;
     transform: translateY(-127%);
     z-index: -1;
@@ -206,4 +211,10 @@ h2 {
   //     transform: translateX(0);
   //   }
   // }
+}
+
+
+.is-transitioning {
+  pointer-events: none;
+  cursor: progress;
 }
